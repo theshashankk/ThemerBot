@@ -217,7 +217,7 @@ module.exports = bot => {
                     await ctx.replyWithPhoto(
                         { source: preview },
                         {
-                            caption: `Preview by @ThemePreviewBot`,
+                            caption: `Preview by @${ctx.botInfo.username}.${data}`,
                             reply_to_message_id: message_id,
                         },
                     );
