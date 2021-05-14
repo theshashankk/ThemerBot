@@ -10,7 +10,7 @@ const bot = new Telegraf(env.BOT_TOKEN, {
 bot.command(`status`, ctx => {
     // Ignore the message if it's older than 2 seconds
     if (Date.now() / 1000 - ctx.message.date < 2) {
-        ctx.reply(`The bot is up.`);
+        ctx.reply(`Yoo!! .`);
     }
 });
 
